@@ -25,7 +25,7 @@ jobs:
             jekyll build
 
       - name: Upload built site as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.3.0
         with:
           name: jekyll-site
           path: _site
