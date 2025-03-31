@@ -1,83 +1,110 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Gallery - Ishwar Netam</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			.gallery-grid div {
-				padding-bottom: 20px;
-				border-bottom: 2px solid #ccc;
-				margin-bottom: 20px;
-			}
-			.gallery-grid div:last-child {
-				border-bottom: none;
-			}
-		</style>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<header id="header" class="alt style2">
-				<a href="index.html" class="logo"><strong>Ishwar Netam</strong> <span>Physicist</span></a>
-				<nav>
-					<a href="#menu">Menu</a>
-				</nav>
-			</header>
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-							<li><a href="about_me.html">About me</a></li>
-							<li><a href="research.html">Seminars, Workshops, and Courses</a></li>
-							<li><a href="cv.html">CV</a></li>
-							
-							<li><a href="contact.html">Contact me</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-				</ul>
-			</nav>
-			<section id="banner" class="style2">
-				<div class="inner">
-					<header class="major">
-						<h1>Gallery</h1>
-					</header>
-				</div>
-			</section>
-			<div id="main" class="inner">
-				<section id="gallery">
-					<header class="major">
-						<h2>My Photo Gallery</h2>
-					</header>
-					<div class="gallery-grid">
-						<div>
-							<img src="images/niser_workshop_smJPG.JPG" />
-							<p>HSF-India HEP Software Workshop at NISER - Bhubaneswar</p>
-						</div>
-						<div>
-							<img src="images/photo2.jpg" alt="Description 2" />
-							<p>Caption for Image 2</p>
-						</div>
-						<div>
-							<img src="images/photo3.jpg" alt="Description 3" />
-							<p>Caption for Image 3</p>
-						</div>
-					</div>
-				</section>
-			</div>
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><span class="icon solid alt fa-envelope"></span> ishwarnetam9@gmail.com</li>
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Ishwar Netam | Design acknowledgement <a href="https://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-		</div>
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+<head>
+    <title>Gallery - Ishwar Netam</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+        /* Gallery Grid Styling */
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-grid div {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .gallery-grid div:last-child {
+            border-bottom: none;
+        }
+
+        /* Responsive Image Styling */
+        .gallery-grid div img {
+            width: 100%;       /* Makes image responsive */
+            height: auto;      /* Maintains aspect ratio */
+            max-width: 100%;   /* Prevents oversized images */
+            display: block;
+            border-radius: 5px; /* Optional rounded corners */
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        <header id="header" class="alt style2">
+            <a href="index.html" class="logo"><strong>Ishwar Netam</strong> <span>Physicist</span></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About me</a></li>
+                <li><a href="research.html">Seminars, Workshops, and Courses</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <section id="banner" class="style2">
+            <div class="inner">
+                <header class="major">
+                    <h1>Gallery</h1>
+                </header>
+            </div>
+        </section>
+
+        <div id="main" class="inner">
+            <section id="gallery">
+                <header class="major">
+                    <h2>My Photo Gallery</h2>
+                </header>
+                <div class="gallery-grid">
+                    <div>
+                        <img src="images/niser_workshop_smJPG.JPG" alt="HSF-India HEP Software Workshop" />
+                        <p>HSF-India HEP Software Workshop at NISER - Bhubaneswar</p>
+                    </div>
+                    <div>
+                        <img src="images/photo2.jpg" alt="Event Image 2" />
+                        <p>Caption for Image 2</p>
+                    </div>
+                    <div>
+                        <img src="images/photo3.jpg" alt="Event Image 3" />
+                        <p>Caption for Image 3</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><span class="icon solid alt fa-envelope"></span> ishwarnetam9@gmail.com</li>
+                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Ishwar Netam | Design acknowledgment <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
+
