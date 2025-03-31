@@ -11,9 +11,9 @@
         /* Gallery Grid Styling */
         .gallery-grid {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
             gap: 20px;
-            justify-content: center;
         }
 
         .gallery-grid div {
@@ -21,12 +21,6 @@
             width: 100%;
             text-align: center;
             padding-bottom: 20px;
-            border-bottom: 2px solid #ccc;
-            margin-bottom: 20px;
-        }
-
-        .gallery-grid div:last-child {
-            border-bottom: none;
         }
 
         /* Responsive Image Styling */
@@ -36,6 +30,14 @@
             max-width: 100%;   /* Prevents oversized images */
             display: block;
             border-radius: 5px; /* Optional rounded corners */
+        }
+
+        /* Divider Line Styling */
+        .divider {
+            width: 80%;
+            height: 2px;
+            background-color: #ccc;
+            margin: 20px auto;
         }
     </style>
 </head>
@@ -77,14 +79,19 @@
                         <img src="images/niser_workshop_smJPG.JPG" alt="HSF-India HEP Software Workshop" />
                         <p>HSF-India HEP Software Workshop at NISER - Bhubaneswar</p>
                     </div>
+                    <div class="divider"></div>
+
                     <div>
                         <img src="images/photo2.jpg" alt="Event Image 2" />
                         <p>Caption for Image 2</p>
                     </div>
+                    <div class="divider"></div>
+
                     <div>
                         <img src="images/photo3.jpg" alt="Event Image 3" />
                         <p>Caption for Image 3</p>
                     </div>
+                    <div class="divider"></div>
                 </div>
             </section>
         </div>
@@ -107,4 +114,3 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
-
