@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Forty by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html lang="en">
 <head>
@@ -10,11 +10,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://ishwarnetam.github.io/" />
+
   <!-- Google Search Console verification -->
   <meta name="google-site-verification" content="V57PKO4hI7gxtzKsaySEoF2pd5hPuAIRmnwviuxkLUE" />
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Official website of Ishwar Netam, Integrated MSc Physics student at Pt. Ravishankar Shukla University Raipur. Explore my research in Solar Physics, Astronomy, Astrophysics, projects, workshops, and academic journey.">
+  <meta name="description" content="Ishwar Netam is an Integrated MSc Physics student at Pt. Ravishankar Shukla University, Raipur, working in Solar Physics, Astronomy, and Astrophysics. Explore research projects, workshops, CV, and academic journey.">
   <meta name="keywords" content="Ishwar Netam, Physics, Astronomy, Astrophysics, Solar Physics, Research, MSc Student, Pt Ravishankar Shukla University, India">
   <meta name="author" content="Ishwar Netam">
   <meta name="robots" content="index, follow">
@@ -25,6 +28,33 @@
   <meta property="og:url" content="https://ishwarnetam.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://ishwarnetam.github.io/images/Ishwar.jpg">
+
+  <!-- Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ishwar Netam",
+    "url": "https://ishwarnetam.github.io/",
+    "image": "https://ishwarnetam.github.io/images/Ishwar.jpg",
+    "jobTitle": "Integrated MSc Physics Student",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Pt. Ravishankar Shukla University, Raipur"
+    },
+    "sameAs": [
+      "https://github.com/ishwarnetam",
+      "https://twitter.com/netam_ishwar"
+    ],
+    "knowsAbout": [
+      "Solar Physics",
+      "Dynamo Theory",
+      "Astronomy",
+      "Astrophysics",
+      "Magnetohydrodynamics"
+    ]
+  }
+  </script>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -38,9 +68,11 @@
 
     <!-- Header -->
     <header id="header" class="alt">
-      <a href="index.html" class="logo"><strong>Ishwar Netam</strong> <span>Physicist</span></a>
+      <a href="index.html" class="logo">
+        <strong>Ishwar Netam</strong> <span>Physics | Astronomy</span>
+      </a>
       <nav>
-        <a href="#menu">Menu</a>
+        <a href="#menu" aria-label="Open navigation menu">Menu</a>
       </nav>
     </header>
 
@@ -61,8 +93,14 @@
       <div class="inner">
         <h1 style="margin-bottom:0">Ishwar Netam</h1>
         <div class="content">
-          <p><span style="color:yellow">Int. MSc Student</span> <br>
-          Center for Basic Sciences, Pt. Ravishankar Shukla University Raipur, India</p>
+          <p>
+            <span style="color:yellow">Integrated MSc Physics Student</span><br>
+            Center for Basic Sciences, Pt. Ravishankar Shukla University, Raipur, India
+          </p>
+          <p style="margin-top:1em">
+            Research Interests:<br>
+            <strong>Solar Physics • Dynamo Theory • Astronomy • Astrophysics</strong>
+          </p>
         </div>
       </div>
     </section>
@@ -77,7 +115,7 @@
           </span>
           <header class="major">
             <h3><a href="about_me.html" class="link">About me</a></h3>
-            <p>Physicist</p>
+            <p>Physics & Astronomy</p>
           </header>
         </article>
 
@@ -125,9 +163,21 @@
     <footer id="footer">
       <div class="inner">
         <ul class="icons">
-          <li><span class="icon solid alt fa-envelope"></span> ishwarnetam9@gmail.com</li>
-          <li><a href="https://twitter.com/netam_ishwar" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="https://github.com/ishwarnetam" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+          <li>
+            <a href="mailto:ishwarnetam9@gmail.com" class="icon solid alt fa-envelope">
+              <span class="label">Email</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/netam_ishwar" class="icon brands alt fa-twitter">
+              <span class="label">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ishwarnetam" class="icon brands alt fa-github">
+              <span class="label">GitHub</span>
+            </a>
+          </li>
         </ul>
         <ul class="copyright">
           <li>&copy; Ishwar Netam | Design acknowledgement <a href="https://html5up.net">HTML5 UP</a></li>
@@ -137,16 +187,14 @@
 
   </div>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+  <!-- Scripts (Deferred for performance) -->
+  <script src="assets/js/jquery.min.js" defer></script>
+  <script src="assets/js/jquery.scrolly.min.js" defer></script>
+  <script src="assets/js/jquery.scrollex.min.js" defer></script>
+  <script src="assets/js/browser.min.js" defer></script>
+  <script src="assets/js/breakpoints.min.js" defer></script>
+  <script src="assets/js/util.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 </html>
-
-this is my index.html
